@@ -23,16 +23,24 @@ if(!empty($_POST['uname']) && !empty($_POST['psw'])){
     }
 }
 ?>
-<div>
+<div class='container'>
     <form method='POST'>
-   
-        <label><b>Username: </b></label>
-        <input type="text" placeholder='Enter username..' name='uname'>
+        <div class='form-group mb-3'>
+            <label><b>Username: </b></label>
+            <input type="text" class='form-contorl' placeholder='Enter username..' name='uname'>
+        </div>
 
-        <label><b>Password: </b></label>
-        <input type="text" placeholder='Enter password..' name='psw'>
-
-        <button type="submit">Login</button>
+        <div>
+            <label>Password:</label>
+            <input type="text" placeholder='Enter password..' name='psw'>
+        </div>
+        <div>
+            <label><b>Remember me</b></label>
+            <input type="checkbox" id='rememebrMeCheck'>
+        </div> 
+        <div>
+            <button type="submit">Login</button>
+        </div>
         <div>
         <?php if(!empty($error)) echo $error ?>
         </div>
