@@ -1,5 +1,4 @@
 <?php
-require './dbconnect.php';
 
 if(!empty($_POST['uname']) && !empty($_POST['password'])){
     $r_name = $_POST['uname'];

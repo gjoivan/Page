@@ -1,0 +1,671 @@
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (max-width: 1199px) {
+    .column_left {
+        width: 25%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    #head_nav.log_empty .resp_menu{
+        display: inline-block;
+    }
+    #head_nav .lang_box_r{
+        display: none;
+    }
+    #head_nav .navi-btn:checked  ~ .resp_box {
+        display: block;
+    }
+    #head_nav .tooltip-box{
+        display: none;
+    }
+    #head_nav .hamburger-menu{
+        display: inline-block;
+    }
+    #head_nav .links-mid a.desk-nav{
+        display: none;
+    }
+    #head_nav .links-mid a.desk-nav.highlighted{
+        display: inline-block;
+    }
+    .smart-desk-n{
+        display: none!important;
+    }
+    .smart-desk-s{
+        display: block!important;
+    }
+    #loginGroup .p-side-left {
+        padding-left: 0;
+        padding: 24px;
+    }
+    .login-group .log-hotline{
+        display: none;
+    }
+    .splashscreen-template .pm-zero {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    .splashscreen-template .align-self-center{
+        align-self: flex-start!important;
+    }
+    .splashscreen-template .h-100{
+        height: auto!important;
+    }
+    .splashscreen-template .p-side-left {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 32px;
+    }
+    .carousel-b-right, .carousel-b-left {
+        width: 80px;
+    }
+    .th-carousel__toggle--prev{
+        left: 25px;
+    }
+    .th-carousel__toggle--next{
+        right: 25px;
+    }
+    .smart-carousel .circ_group .desk-circ{
+        display: block;
+    }
+    #smartphones_section .box-side-group{
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+        display: -ms-inline-flexbox!important;
+        display: inline-flex!important;
+    }
+    .smart-login .box-side-group{
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+        display: -ms-inline-flexbox!important;
+        display: inline-flex!important;
+    }
+    .smart-login .box-side-group .box-side-l{
+        margin: 0 0 16px 0;
+        padding: 32px 24px 24px 24px;
+    }
+    .smart-login .box-side-group .box-side-r{
+        margin: 0;
+    }
+    .smart-login .box-side-group .login_mr_tb{
+        max-width: 290px;
+    }
+    .smart-login .box-side-group .box-side-l .flex-col-reverse, .smart-login .box-side-group .box-side-r .flex-col-reverse{
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important;
+    }
+    .smart-login .box-side-group .box-side-l .flex-end, .smart-login .box-side-group .box-side-r .flex-end{
+        -ms-flex-item-align: end!important;
+        align-self: flex-end!important;
+    }
+    .smart-login .box-side-group .box-side-r .right-top, .smart-login .box-side-group .box-side-r .right-bottom{
+        height: auto;
+        max-height: none;
+        padding: 32px 24px 24px 24px;
+    }
+    .smart-login .box-side-group img.img-b-sim, .smart-login .box-side-group img.img-b-router{
+        height: 140px!important;
+    }
+    .smart-login .box-side-group .img-b-voucher {
+        top: auto;
+        position: absolute;
+        right: -45px;
+        bottom: 40px;
+        transform: rotate(-40deg);
+        height: 85px!important;
+    }
+    .smart-login .box-side-group .box-side-r .right-bottom{
+        min-height: 336px;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center {
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center > div:first-child{
+        margin-bottom: 16px;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center #companyChecker{
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .c-self-center{
+        -ms-flex-item-align: auto!important;
+        align-self: auto!important;
+        margin-left: 0;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .c-self-center > a{
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+    }
+    #profile_home .box-side-group .box-side-r {
+        margin-left: 0;
+        border-radius: 8px;
+        flex: 0 0 100%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #head_nav .desk-logo {
+        display: none;
+    }
+    #head_nav .resp-logo {
+        display: block;
+    }
+    .loginGroup.modals-background .x-close{
+        right: 0;
+    }
+    #head_nav.log_menu .resp_menu{
+        display: inline-block;
+    }
+    #head_nav.log_menu .menu_nav_d{
+        display: none;
+    }
+    #head_nav .menu_nav_d a, #head_nav .links-mid a{
+        margin-right: 16px;
+    }
+    #head_nav .menu_nav_d a, #head_nav .links-mid a.highlighted{
+        margin-right: 0;
+    }
+    #head_nav .lang-box > .lan{
+        display: none;
+    }
+    #head_nav .lang_box_r{
+        display: block;
+    }
+    .section-login-group .flex-promo-wrap{
+        flex-wrap: wrap;
+    }
+    .section-login-group .promo-box{
+        padding: 15px;
+        border: none;
+        flex: 0 50%;
+        font-size: 14px!important;
+    }
+    .section-login-group .promo-box:first-child{
+        border-right: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+    }
+    .section-login-group.majoral_partner_promo .promo-box:first-child{
+        border:0;
+    }
+    .section-login-group.majoral_partner_promo .promo-box{
+        flex:0 93%;
+    }
+    .section-login-group .promo-box:nth-child(2){
+        border-bottom: 2px solid #ffffff;
+    }
+    .section-login-group .promo-box:nth-child(3){
+        border-right: 2px solid #ffffff;
+    }
+    .smart-login .smart-flex-faq a.btn.action.btn-auto {
+        max-width: 180px!important;
+        display: block!important;
+        width: 180px!important;
+        padding: 12px 0px!important;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l{
+        text-align: center;
+        margin-right: 0;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center{
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center > div:first-child{
+        margin-bottom: 16px;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .flex-center #companyChecker{
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .c-self-center {
+        -ms-flex-item-align: auto!important;
+        align-self: auto!important;
+        margin-left: 0;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-l .c-self-center > a {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: auto;
+    }
+    #smartphones_section.smart-login .smart-flex-box .company-flex-r{
+        display: none!important;
+    }
+    #smartphones_section.smart-login h1{
+        font-size: 24px;
+    }
+    #profile_home h1{
+        font-size: 24px;
+    }
+    .smart-login .box-side-group .box-side-l{
+        background-image: url("/static/img/content/angebote_bg_mobilfunk_Resp.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .smart-login .box-side-group .box-one-for-one{
+        background-image: url('/static/img/content/oneforone-box.jpg');
+        background-position: 62%;
+    }
+    #smartphones_section .box-one-for-one h1{
+        font-size: 24px;
+        width: 60%;
+    }
+    #smartphones_section .box-one-for-one .text-wrap{
+        width: 50%;
+    }
+    .smart-login .box-side-group .box-side-r .right-top{
+        background-image: url("/static/img/content/angebote_bg_internet_Resp.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .smart-login .box-side-group .box-side-r .right-bottom{
+        background: rgb(0,127,149);
+        background: linear-gradient(90deg, rgba(0,127,149,1) 0%, rgba(0,176,202,1) 100%);
+    }
+    .smart-carousel .circ_group .resp-circ{
+        display: block;
+    }
+    #profile_home .box-side-group .box-side-r .color-box.blue {
+        min-height: 336px;
+    }
+    .loginGroup .img-responsive{
+        position: relative;
+        max-width: 141%;
+        width: 141%;
+    }
+    .carousel-b-right, .carousel-b-left {
+        width: 42px;
+    }
+    .th-carousel__toggle--prev{
+        left: 10px;
+    }
+    .th-carousel__toggle--next{
+        right: 10px;
+    }
+    #smartphones_section.smart-login .section-smartphones{
+        max-width: 250px;
+    }
+    #smartphones_section.smart-login img.img-rab {
+        left: -30px;
+    }
+    .smart-resp-n{
+        display: none!important;
+    }
+    .smart-resp-s{
+        display: block!important;
+    }
+    #home .desk-i, .login-group .desk-i, .splashscreen-template .desk-i{
+        display: none!important;
+    }
+    #home .resp-i, .login-group .resp-i, .splashscreen-template .resp-i{
+        display: block!important;
+    }
+    #red-display .column_right, #multi_sim_options .column_right{
+        margin-top: 10px;
+    }
+    .column_left {
+        width: 31%;
+    }
+    #bestellen .bestellen-btnorder {
+        padding: 3px 20px;
+    }
+    #bestellen #personal-data{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    #bestellen #side-prices{
+        border: 1px solid #E3E3E3;
+        border-radius: 4px;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 15px;
+        width: 100%;
+        margin: auto;
+        max-width: 260px;
+    }
+    #bestellen .mrg-btn {
+        margin-left: 0;
+    }
+    #bestellen .clear-both{
+        clear: both;
+    }
+    #bestellen .padd-l60 {
+        padding-left: 0;
+    }
+    #bestellen .padd-bt20.top{
+        padding-top: 20px;
+    }
+    #bestellen .checkbox-table.i-tv{
+        width: 100%;
+        float: left;
+    }
+    #bestellen .checkbox-table.i-tv{
+        width: 100%;
+        float: left;
+    }
+    #bestellen .checkbox-table.auto.second .cell-50.top {
+        padding-left: 35px;
+        padding-top: 25px;
+    }
+    #bestellen .checkbox-table.auto.second{
+        width: 100%;
+        float: none;
+    }
+    #bestellen .checkbox-table.auto .cell-235{
+        width: auto;
+    }
+    #bestellen .checkbox-table.auto.second .cell-30.top {
+        padding-left: 55px;
+        padding-top: 25px;
+    }
+    .modals-background .x-close{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        top: auto;
+        margin: auto;
+        background-color: #fff;
+        padding: 12px;
+        text-align: center;
+    }
+    .box-group{
+        padding: 0 15px;
+    }
+    .modals-background .box-grey{
+        max-height: 100px;
+        min-height: 100px;
+    }
+    .modals-background .box-red{
+        max-height: 100px;
+        min-height: 100px;
+    }
+    #smartphones{
+        padding: 40px 0;
+    }
+    #smartphones .section-smartphones {
+        padding: 0 16px;
+    }
+    #smartphones .section-smartphones .table-smartphones {
+        display: block;
+        width: 100%;
+    }
+    #smartphones .section-smartphones .table-r-smartphones {
+        display: block;
+        width: 100%;
+    }
+    #smartphones .section-smartphones .table-c-smartphones{
+        display: block;
+        width: 100%;
+    }
+    #smartphones .grey-box-smartphones{
+        margin-top: 16px;
+        margin-left: -24px;
+        margin-right: -24px;
+        padding-left: 24px;
+    }
+    .modal-cookie .renew-btn{
+        max-width: 280px;
+        width: 100%;
+        min-width: auto;
+        display: block;
+        margin: 0 auto 24px auto!important;
+    }
+    .modal-cookie .cookie-agree{
+        max-width: 280px;
+        min-width: auto;
+        width: 100%;
+        display: block;
+        margin: 0 auto 24px auto;
+    }
+    .flex-vertical {
+        flex-flow: column!important;
+        align-items: center!important;
+    }
+    #smartphones_section .termin-box {
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+    #smartphones_section .nav-smartphones .termin-q{
+        margin: 16px 0;
+    }
+    #smartphones_section .nav-smartphones .termin-box{
+        margin: 50px auto auto auto;
+        max-width: 312px;
+    }
+    .box-side-group{
+        -ms-flex-direction: column!important;
+        flex-direction: column!important;
+        display: -ms-inline-flexbox!important;
+        display: inline-flex!important;
+    }
+    .box-side-group .box-side-l{
+        margin: 0 0 16px 0;
+        padding: 32px 24px 24px 24px;
+    }
+    .box-side-group .box-side-r{
+        margin: 0;
+    }
+    .box-side-group .login_mr_tb{
+        max-width: 290px;
+    }
+    .box-side-group .box-side-l .flex-col-reverse, .box-side-group .box-side-r .flex-col-reverse{
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important;
+    }
+    .box-side-group .box-side-l .flex-end, .box-side-group .box-side-r .flex-end{
+        -ms-flex-item-align: end!important;
+        align-self: flex-end!important;
+    }
+    .box-side-group .box-side-r .right-top, .box-side-group .box-side-r .right-bottom{
+        height: auto;
+        max-height: none;
+        padding: 32px 24px 24px 24px;
+    }
+    .box-side-group img.img-b-sim, .box-side-group img.img-b-router{
+        height: 140px!important;
+    }
+    .box-side-group .img-b-voucher {
+        top: auto;
+        position: absolute;
+        right: -45px;
+        bottom: 40px;
+        transform: rotate(-40deg);
+        height: 85px!important;
+    }
+    .box-side-group .box-side-r .right-bottom{
+        min-height: 336px;
+    }
+    #profile_home h1.main-l{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 575px) {
+    #smartphones .nav-smartphones br {
+        display: none;
+    }
+    #smartphones .more-smartphones br{
+        display: none;
+    }
+    .section-login-group.majoral_partner_promo .promo-box img{
+        display:none;
+    }
+    .section-login-group.majoral_partner_promo .promo-box img:nth-child(2){
+        display:block;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+}
+@media only screen and (max-width: 365px) {
+    .p-modal-t{
+        font-size: 24px!important;
+    }
+    .th-carousel__toggle--next {
+        right: 0px;
+    }
+    .th-carousel__toggle--prev {
+        left: 0px;
+    }
+    #head_nav .menu_nav_d a.highlighted, #head_nav .links-mid a.highlighted {
+        margin-right: 0;
+        font-size: 14px;
+    }
+    #head_nav .p-left{
+        padding-left: 0;
+    }
+    #head_nav .resp_menu{
+        margin-left: 24px;
+    }
+    #searchCompanies.all-inputs,
+    #searchCompany.all-inputs{
+        max-width: 280px;
+        min-width: auto;
+    }
+}
+@media only screen and (max-width: 359px) {
+    .section-login-group .promo-box {
+        padding: 15px;
+        font-size:12px!important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .smart-login .box-side-group .box-one-for-one{
+        background-image: url('/static/img/content/oneforone-box.jpg');
+        background-position: 62%;
+        padding: 32px 132px 24px 24px;
+    }
+    #smartphones_section .box-one-for-one h1{
+        font-size: 24px;
+        width: 60%;
+    }
+    #smartphones_section .box-one-for-one .text-wrap{
+        width: 50%;
+    }
+    #head_nav .lang_box_r{
+        display: none;
+    }
+    .container-fluid{
+        padding: 0;
+    }
+    #bestellen .bestellen-btnorder {
+        padding: 3px 20px;
+    }
+    #bestellen #personal-data{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    #bestellen #side-prices{
+        border: 1px solid #E3E3E3;
+        border-radius: 4px;
+        padding: 10px;
+        margin-left: 0px;
+        margin-top: 15px;
+        width: 100%;
+        margin: auto;
+        max-width: 260px;
+    }
+    #bestellen .second-data .back-infocellbig {
+        width: 235px;
+    }
+    #deskDevice>div>div>div.desk-right>span {
+        display: none;
+    }
+    #header .partner-logo {
+        margin: 8px 16px 8px 16px;
+    }
+    .flex-vertical {
+        flex-flow: column!important;
+        align-items: center!important;
+    }
+    #smartphones_section .termin-box {
+        margin-left: 17px;
+        margin-right: 17px;
+    }
+    #smartphones_section .nav-smartphones .termin-q{
+        margin: 16px 0;
+    }
+    #smartphones_section .nav-smartphones .termin-box{
+        margin: 50px auto auto auto;
+        max-width: 312px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #head_nav .menu_nav_d a, #head_nav .links-mid a{
+        margin-right: 16px;
+    }
+    #header .desk-phone {
+        height: 27px;
+        vertical-align: middle;
+    }
+    #header .desk-right .tooltip-box{
+        font-size: 14px;
+    }
+    #bestellen .back-infocellbig {
+        width: 225px;
+    }
+    #bestellen .mrg-btn {
+        margin-left: 30px;
+    }
+    #bestellen .bestellen-btnorder {
+        padding: 3px 22px;
+    }
+    #bestellen #personal-data{
+        margin-right: 0;
+    }
+    #bestellen .second-data .email-cell{
+        width: 220px;
+    }
+    #bestellen .second-data .phone-cell{
+        width: 110px;
+    }
+    #bestellen .second-data .phone-cell.phone-cell-short{
+        width: 66px;
+    }
+    #bestellen .second-data .personal-cell{
+        width: 220px;
+    }
+    #bestellen .padd-l60 {
+        padding-left: 0;
+    }
+    #bestellen .padd-bt20.top{
+        padding-top: 20px;
+    }
+    #bestellen .checkbox-table.i-tv{
+        width: auto;
+        float: left;
+    }
+    #bestellen .checkbox-table.i-tv{
+        width: auto;
+        float: left;
+    }
+    #bestellen .checkbox-table.flats{
+        max-width: 240px;
+    }
+    #bestellen .cell-270{
+        width: 270px;
+    }
+    #deskDevice>div>div>div.desk-right>span {
+        display: none;
+    }
+    #header .partner-logo {
+        margin: 8px 16px 8px 16px;
+    }
+    #header .desk-phone {
+        height: 27px;
+    }
+}

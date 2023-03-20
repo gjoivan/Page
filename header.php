@@ -1,26 +1,26 @@
- <div class="header">
-    <h1>Header</h1>
+
+<div class="header">
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>Gradba Unikat</h1>
+        </div>
+    </div>
     <header>
-        <ol>
-            <li><a href="?route=home">Home</a></li>
-            <li><a href="?route=login">Login</a></li>
+        <div style="float: right; padding: 15px">
+            <a href="?route=home">Home</a>
             <?php
              if(!empty($_SESSION['logged_in'])){?>
-             <li><a href="?route=contact">Contact</a></li>
+                <a href="?route=contact">Contact</a>
              <?php } 
-             if(empty($_SESSION['logged_in'])){?>
-             <li><a href="?route=register">Register</a></li>
-             <?php } ?>
-            <?php 
-                if(!empty($_SESSION['logged_in'])) {?>
-                    <li>
-                         <form method="POST">
-                             <input type='hidden' name='logout' value='1'/>
-                             <button href="./home">Logout</button>
-                         </form>
-                    </li>
-            <?php } ?>
-        </ol>
+            if(!empty($_SESSION['logged_in'])) {?>
+                <form method="POST">
+                    <input type='hidden' name='logout' value='1'/>
+                    <button href="./home">Logout</button>
+                </form>
+            <?php } else{ ?>
+                <a href="?route=login">Login</a>
+            <?php }?>
+        </div>
     </header>
     <?php if(!empty($message)) { echo $message;} ?>
 </div>
