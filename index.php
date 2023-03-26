@@ -1,5 +1,6 @@
 <?php 
 
+// var_dump($_SERVER); return;
 require_once __DIR__."/config/index.php";
 require_once  __DIR__."/config/login_session.php";
 $route = isset($_GET['route']) ? $_GET['route'] : 'home';

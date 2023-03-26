@@ -9,10 +9,10 @@
         <div style="float: right; padding: 15px">
             <a href="?route=home">Home</a>
             <?php
-             if(!empty($_SESSION['logged_in'])){?>
+             if(!empty($_SESSION['login'])){?>
                 <a href="?route=contact">Contact</a>
-             <?php } 
-            if(!empty($_SESSION['logged_in'])) {?>
+             <?php }
+            if(!empty($_SESSION['login'])) {?>
                 <form method="POST">
                     <input type='hidden' name='logout' value='1'/>
                     <button href="./home">Logout</button>
@@ -22,5 +22,5 @@
             <?php }?>
         </div>
     </header>
-    <?php if(!empty($message)) { echo $message;} ?>
+    <?php if(!empty($_SESSION['message'])) { echo $_SESSION['message'];} else{ echo 'You are logged out';} ?>
 </div>

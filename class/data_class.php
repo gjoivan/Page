@@ -6,7 +6,8 @@ class Data_Class{
         $this->connection = $mysqliObj;
     }
     public function get_user_by_email($email){
-        $request = "SELECT `email`, `password` FROM Users WHERE `email` = '{$email}' LIMIT 1";
+        
+        $request = "SELECT * FROM users WHERE `email` = '{$email}' LIMIT 1";
         $QueryObj = $this->connection->query($request, MYSQLI_USE_RESULT);
         $return_arr = array();
         $row = $QueryObj->fetch_assoc();

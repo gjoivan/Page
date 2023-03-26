@@ -1,28 +1,47 @@
 <?php
-// var_dump($_SESSION['log_in']);
-if(!empty($_SESSION['logged_in'])){
-    header("Location: home");
-    return;
-}
 
-if(!empty($_POST['uname']) && !empty($_POST['psw'])){
-    $username = $_POST['uname'];
-    $passWord = $_POST['psw'];
-    $request = "SELECT `username`, `password` FROM User WHERE `username`='".$username."'";
-    $QueryObj = $connection->query($request, MYSQLI_USE_RESULT);
-    $data = $QueryObj->fetch_assoc();
-    if(!empty($data) && $data['password'] == $passWord){
-        $_SESSION['logged_in'] = true;
-        $_SESSION['username'] = $username;
-        header("Location: home");
-        return; 
-    } else{
-        $_SESSION['logged_in'] = false;
-        $error = 'Username/Password error.';
-    }
-}
+// var_dump($_SESSION['login_message'], $message);
+// if(!empty($_SESSION['logged_in'])){
+//     header("Location: home");
+//     return;
+// }
+
+// if(!empty($_POST['uname']) && !empty($_POST['psw'])){
+//     $username = $_POST['uname'];
+//     $passWord = $_POST['psw'];
+//     $request = "SELECT `username`, `password` FROM User WHERE `username`='".$username."'";
+//     $QueryObj = $connection->query($request, MYSQLI_USE_RESULT);
+//     $data = $QueryObj->fetch_assoc();
+//     if(!empty($data) && $data['password'] == $passWord){
+//         $_SESSION['logged_in'] = true;
+//         $_SESSION['username'] = $username;
+//         header("Location: home");
+//         return; 
+//     } else{
+//         $_SESSION['logged_in'] = false;
+//         $error = 'Username/Password error.';
+//     }
+// }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niko-San Gradba</title>
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap-grid.min.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script href="jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+</head>
 <!-- <div class='container'>
     <form method='POST'>
         <div class="form-outline mb-4">
@@ -98,6 +117,7 @@ if(!empty($_POST['uname']) && !empty($_POST['psw'])){
     </div>
   </div>
 </div>
+<?php if(!empty($message)) { echo $message;} ?>
 <script>
   function verify_user(){
     var email = $('#email_entry').val();
@@ -112,11 +132,11 @@ if(!empty($_POST['uname']) && !empty($_POST['psw'])){
     }
     $.post("./ajax/login_ajax.php", {event: 'verify_user', email: email, password: password}, function(data, status){
       var data = JSON.parse(data);
-      $('#response').html(data.message);
+      // $('#response').html(data.message); 
       if(data.status == "success"){
-        // $('#response').html(data.message);
+        window.location.href = 'http://localhost/Page/';
       }else if(data.status == "error"){
-        // $('#response').html("Wrong email format!");
+        $('#response').html("Wrong credentials!");
       }
     });
 
