@@ -1,4 +1,28 @@
-
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>Градба Уникат</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#menu-toggle" class="navbar-toggle" id="menu-toggle">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <!-- <a class="navbar-brand" href="/bo"><img style="height:50px;width:50px;" src="renovation-logo.jpg" /></a> -->
+        </div>
+        <div id="navbar">
+            <ul class="nav navbar-nav navbar-right"> 
+                <li style="position:relative;">
+                <li><form action="./index.php" method="post"><input value="Logout" type="submit" class="btn btn-xs"/><input type="hidden" name="logout" value="logout" /></form></li>
+            </ul>
+        </div>
+    </div>
+    <?php if(!empty($_SESSION['message'])) { echo $_SESSION['message'];} else{ echo 'You are logged out';} ?>
+</div>
+</nav>
 <div class="header">
     <div class="container">
         <div style="text-align: center;">
@@ -11,15 +35,7 @@
             <?php
              if(!empty($_SESSION['login'])){?>
                 <a href="?route=contact">Contact</a>
-             <?php }
-            if(!empty($_SESSION['login'])) {?>
-                <form method="POST">
-                    <input type='hidden' name='logout' value='1'/>
-                    <button href="./home">Logout</button>
-                </form>
-            <?php } else{ ?>
-                <a href="?route=login">Login</a>
-            <?php }?>
+             <?php } ?>
         </div>
     </header>
     <?php if(!empty($_SESSION['message'])) { echo $_SESSION['message'];} else{ echo 'You are logged out';} ?>

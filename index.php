@@ -13,7 +13,7 @@ $route = isset($_GET['route']) ? $_GET['route'] : 'home';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niko-San Gradba</title>
+    <title>Gradba Unikat</title>
     <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./static/css/bootstrap-grid.min.css" />
     <!-- Latest compiled and minified CSS -->
@@ -37,7 +37,7 @@ $route = isset($_GET['route']) ? $_GET['route'] : 'home';
     style="display:none;visibility:hidden"></iframe></noscript>
 
     <?php 
-    include_once('./header.php');
+    // include_once('./header.php');
     if($route == 'login'){
         include_once('./login.php');
     }elseif($route == "register"){
@@ -51,3 +51,60 @@ $route = isset($_GET['route']) ? $_GET['route'] : 'home';
 
 </body>
 </html>
+
+
+<script>
+    /* globals Chart:false, feather:false */
+
+(function () {
+  'use strict'
+
+  feather.replace({ 'aria-hidden': 'true' })
+
+  // Graphs
+  var ctx = document.getElementById('myChart')
+  // eslint-disable-next-line no-unused-vars
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+      datasets: [{
+        data: [
+          15339,
+          21345,
+          18483,
+          24003,
+          23489,
+          24092,
+          12034
+        ],
+        lineTension: 0,
+        backgroundColor: 'transparent',
+        borderColor: '#007bff',
+        borderWidth: 4,
+        pointBackgroundColor: '#007bff'
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false
+          }
+        }]
+      },
+      legend: {
+        display: false
+      }
+    }
+  })
+})()
+</script>
