@@ -38,7 +38,7 @@
   <body>
     
 <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Unikat Gradba</a>
   <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -286,9 +286,13 @@
 
 <script>
   function user_log_out(){
-    var session = <?php echo(json_encode($_SESSION));?>;
-    console.log(session.UserID);
-    $.post("./ajax/login_ajax.php", {event: 'user_log_out', id: session.UserID}, function(data, status){
+    $.post("./ajax/login_ajax.php", {event: 'user_log_out'}, function(data, status){
+      var data = JSON.parse(data);
+      if(data.status == "success"){
+        window.location.href = 'http://localhost/Page/';
+      }else{
+        $('#response').html(data.message); 
+      }
     });
   }
 </script>

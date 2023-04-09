@@ -1,27 +1,9 @@
 <?php
+session_start();
+if(!empty($_SESSION['login'])){
+  header('Location: index.php');
+}
 
-// var_dump($_SESSION['login_message'], $message);
-// if(!empty($_SESSION['logged_in'])){
-//     header("Location: home");
-//     return;
-// }
-
-// if(!empty($_POST['uname']) && !empty($_POST['psw'])){
-//     $username = $_POST['uname'];
-//     $passWord = $_POST['psw'];
-//     $request = "SELECT `username`, `password` FROM User WHERE `username`='".$username."'";
-//     $QueryObj = $connection->query($request, MYSQLI_USE_RESULT);
-//     $data = $QueryObj->fetch_assoc();
-//     if(!empty($data) && $data['password'] == $passWord){
-//         $_SESSION['logged_in'] = true;
-//         $_SESSION['username'] = $username;
-//         header("Location: home");
-//         return; 
-//     } else{
-//         $_SESSION['logged_in'] = false;
-//         $error = 'Username/Password error.';
-//     }
-// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,31 +24,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
-<!-- <div class='container'>
-    <form method='POST'>
-        <div class="form-outline mb-4">
-            <label><b>Username: </b></label>
-            <input type="text" class='form-contorl' placeholder='Enter username..' name='uname'>
-        </div>
-
-        <div class="form-outline mb-4">
-            <label>Password:</label>
-            <input type="text" placeholder='Enter password..' name='psw'>
-        </div>
-        <div>
-            <label><b>Remember me</b></label>
-            <input type="checkbox" id='rememebrMeCheck'>
-        </div> 
-        <div>
-            <button type="submit">Login</button>
-        </div>
-        <div>
-        <?php if(!empty($error)) echo $error ?>
-        </div>
-
-    </form>
-</div> -->
-
 
 <div class="container" style="padding-top:150px;">
   <div class="row justify-content-md-center">
@@ -110,7 +67,7 @@
             <i class="fab fa-github"></i>
           </button>
         </div>
-        <div id="response">
+        <h4 id="response" style="color:red;text-align:center;"></h4>
 
         </div>
       </div>
@@ -123,7 +80,7 @@
     var email = $('#email_entry').val();
     var password = $('#password_entry').val();
     if(email == '' || email == undefined){
-      $('#add_email').focus();
+      $('#email_entry').focus();
       return;
     }
     if(!validateEmail(email)){ 
@@ -132,19 +89,21 @@
     }
     $.post("./ajax/login_ajax.php", {event: 'verify_user', email: email, password: password}, function(data, status){
       var data = JSON.parse(data);
-      // $('#response').html(data.message); 
       if(data.status == "success"){
         window.location.href = 'http://localhost/Page/';
-      }else if(data.status == "error"){
-        $('#response').html("Wrong credentials!");
+      }else{
+        $('#response').html(data.message); 
       }
     });
-
-
   }
   function validateEmail($email) {
       var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
       return emailReg.test( $email );
   }
+  $(document).on('keypress',function(e) {
+    if(e.which == 13) {
+      verify_user();
+    }
+});
 </script>
 
