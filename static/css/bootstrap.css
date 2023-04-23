@@ -550,6 +550,18 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  z-index: 15;
+	position: fixed;
+	left: 225px;
+	width: 0;
+	height: 100%;
+	margin-left: -235px;
+	overflow-y: auto;
+	background-color: #000000;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 @media (min-width: 576px) {
