@@ -253,17 +253,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .smart-login .box-side-group .box-one-for-one{
-        background-image: url('/static/img/content/oneforone-box.jpg');
-        background-position: 62%;
-    }
-    #smartphones_section .box-one-for-one h1{
-        font-size: 24px;
-        width: 60%;
-    }
-    #smartphones_section .box-one-for-one .text-wrap{
-        width: 50%;
-    }
     .smart-login .box-side-group .box-side-r .right-top{
         background-image: url("/static/img/content/angebote_bg_internet_Resp.jpg");
         background-position: center center;
@@ -282,8 +271,8 @@
     }
     .loginGroup .img-responsive{
         position: relative;
-        max-width: 141%;
-        width: 141%;
+        max-width: 100%;
+        width: 100%;
     }
     .carousel-b-right, .carousel-b-left {
         width: 42px;
@@ -530,11 +519,6 @@
     #head_nav .resp_menu{
         margin-left: 24px;
     }
-    #searchCompanies.all-inputs,
-    #searchCompany.all-inputs{
-        max-width: 280px;
-        min-width: auto;
-    }
 }
 @media only screen and (max-width: 359px) {
     .section-login-group .promo-box {
@@ -543,18 +527,6 @@
     }
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
-    .smart-login .box-side-group .box-one-for-one{
-        background-image: url('/static/img/content/oneforone-box.jpg');
-        background-position: 62%;
-        padding: 32px 132px 24px 24px;
-    }
-    #smartphones_section .box-one-for-one h1{
-        font-size: 24px;
-        width: 60%;
-    }
-    #smartphones_section .box-one-for-one .text-wrap{
-        width: 50%;
-    }
     #head_nav .lang_box_r{
         display: none;
     }

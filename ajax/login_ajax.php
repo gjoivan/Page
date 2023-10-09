@@ -20,7 +20,7 @@ if($event == 'verify_user'){
         session_start();
         $_SESSION['userEmail']=$email;
         $_SESSION['log_in'] = true;
-        $_SESSION['UserID']=$user["user_id"];
+        $_SESSION['UserID']=$user["id"];
         $_SESSION['UserType']=$user["type"];
         $_SESSION['activity'] = time();
         $_SESSION['message'] = 'You are logged in!';
@@ -33,10 +33,9 @@ if($event == 'verify_user'){
     return;
 }
 if($event == 'user_log_out'){
-    // error_reporting(E_ALL); ini_set('display_errors', 1);
     session_start();
     $_SESSION['log_in'] = false;
-    $_SESSION['message'] = 'You are logged out!124';
+    $_SESSION['message'] = 'You are logged out!';
     if($_SESSION['log_in'] == false){
         $response_arr = ['status'=>'success', 'log_in'=>false, 'message'=>'Logout Succesfull'];
     }else{

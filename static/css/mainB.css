@@ -239,9 +239,6 @@ a:focus, a:hover {
 .log-hotline-btn svg .cls-1:hover{
     fill: #E60000;
 }
-#smartphones .iphone-y{
-    cursor: pointer!important;
-}
 .vt-flex{
     display: -webkit-flex;
     display: -moz-box;
@@ -361,17 +358,6 @@ input[type="radio"]:checked + .span {
 }
 /* CHECKBOX & RADIO BUTTONS END */
 /* LOGIN PAGE */
-#login-wrapper .lotteryBtn{
-    position: fixed;
-    background-color: #007C92;
-    color: #ffffff;
-    bottom: 15px;
-    right: 15px;
-    padding: 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    z-index: 3;
-}
 .box-side-group .box-side-l{
     background-image: url("/static/img/content/angebote_bg_mobilfunk.jpg");
     background-position: center center;
@@ -381,14 +367,6 @@ input[type="radio"]:checked + .span {
     margin-right: 8px;
     border-radius: 8px;
     flex: 1 1 50%;
-}
-.box-side-group .box-one-for-one{
-    background-image: url('/static/img/content/oneforone-box.jpg');
-    background-position: center center;
-
-}
-#smartphones_section .box-one-for-one .text-wrap{
-    width: 15rem;
 }
 .box-side-group .box-side-l.p-box{
     margin-right: 0;
@@ -513,7 +491,7 @@ input[type="radio"]:checked + .span {
 }
 #smartphones_section.smart-login .smart-carousel{
     background-color: #F4F4F4;
-    padding: 96px 0;
+    padding: 72px 0;
 }
 #home #smartphones_section.smart-login .smart-carousel{
     background-color: #F4F4F4;
@@ -530,36 +508,12 @@ input[type="radio"]:checked + .span {
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    display: none;
-}
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active,
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active2{
-    display: inline-block;
-}
-/* #smartphones_section.smart-login .smart-flex-box #companyBtn{
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
     visibility: hidden;
     opacity: 0;
 }
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active,
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active2{
+#smartphones_section.smart-login .smart-flex-box #companyBtn.active{
     visibility: visible;
     opacity: 1;
-} */
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active a:nth-child(1){
-    display: inline-block;
-}
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active a:nth-child(2){
-    display: none;
-}
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active2 a:nth-child(1){
-    display: none;
-}
-#smartphones_section.smart-login .smart-flex-box #companyBtn.active2 a:nth-child(2){
-    display: inline-block;
 }
 #smartphones_section.smart-login .smart-flex-box .company-flex-l{
     margin-right: 8px;
@@ -838,9 +792,6 @@ input[type="radio"]:checked + .span {
     left: 0;
     display: none;
 }
-.loginGroup .email_error.btm-on{
-    bottom: -20px;
-}
 .loginGroup .email_error.n-line{
     bottom: -8px;
 }
@@ -1051,8 +1002,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     color: #333333;
     background-color: #ffffff;
 }
-#searchCompanies.all-inputs,
-#searchCompany.all-inputs{
+#searchCompanies.all-inputs{
     max-width: 280px;
     min-width: 280px;
 }
@@ -1121,7 +1071,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
 }
 .loginGroup .p-side-top {
     padding-top: 42px;
-    padding-bottom: 42px;
+    padding-bottom: 80px;
 }
 .registration_ip_head{
     font-size: 24px;
@@ -1180,9 +1130,6 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
 .loginGroup .all-inputs{
     text-align: center;
     margin: 8px 0;
-}
-.loginGroup .all-inputs.active{
-    border: 1px solid #E60000;
 }
 .loginGroup .mrgt-log-btn{
     margin:24px 0 0 0;
@@ -1484,8 +1431,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
 }
 /* LOGIN END PAGE */
 /* LOGIN NEW PAGE */
-#loadCompanies,
-#loadCompanyData{
+#loadCompanies{
     position: absolute;
     top: 55px;
     left: 0;
@@ -1501,21 +1447,17 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     -moz-box-shadow: 0px 10px 5px -2px rgb(211 211 211);
     box-shadow: 0px 10px 5px -2px rgb(211 211 211);
 }
-#loadCompanies::-webkit-scrollbar,
-#loadCompanyData::-webkit-scrollbar {
+#loadCompanies::-webkit-scrollbar {
     width: 6px;
 }
-#loadCompanies::-webkit-scrollbar-track,
-#loadCompanyData::-webkit-scrollbar-track {
+#loadCompanies::-webkit-scrollbar-track {
     background: #CCCCCC; 
 }
-#loadCompanies::-webkit-scrollbar-thumb,
-#loadCompanyData::-webkit-scrollbar-thumb {
+#loadCompanies::-webkit-scrollbar-thumb {
     background: #333333; 
     border-radius: 4px;
 }
-#loadCompanies::-webkit-scrollbar-thumb:hover,
-#loadCompanyData::-webkit-scrollbar-thumb:hover {
+#loadCompanies::-webkit-scrollbar-thumb:hover {
     background: #333333; 
 }
 .company-box{
@@ -1535,8 +1477,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
 .company-box .company-head:hover{
     color: #E60000;
 }
-.company-box .company-subhead,
-.company-box .company-subhead-direct{
+.company-box .company-subhead{
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
@@ -1546,13 +1487,11 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     font-size: 14px;
     border-bottom: 1px solid #CCCCCC;
 }
-.company-box .company-subhead:hover,
-.company-box .company-subhead-direct:hover{
+.company-box .company-subhead:hover{
     color: #E60000;
     border-bottom: 1px solid #E60000;
 }
-.company-box .company-subhead:last-child,
-.company-box .company-subhead-direct:last-child{
+.company-box .company-subhead:last-child{
     border-bottom: 1px solid transparent;
 }
 .section-login-group .promo-group{
@@ -1572,7 +1511,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     padding-left: 16px;
 }
 .section-login-group .promo-box{
-    padding: 16px 24px;
+    padding: 24px;
     border-right: 2px solid #ffffff;
 }
 .section-login-group.majoral_partner_promo .promo-box{
@@ -1599,123 +1538,6 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     color: #333333;
     font-family: 'Vodafone-Rg-Bd';
 }
-.loginGroup .lottery-box .container{
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 327px;
-    margin: 20px auto;
-}
-.lottery-err{
-    color: #E60000;
-    display: none;
-    margin-top: 8px;
-    font-size: 12px;
-}
-.lottery-err.active{
-    display: block;
-}
-.loginGroup .lottery-box .login-subtitle{
-    padding-bottom: 32px;
-    font-size: 16px;
-    color: #333333;
-    font-family: 'Vodafone-Rg-Bd';
-    text-align: center;
-    line-height: 1.3;
-    width: 100%;
-    max-width: 327px;
-    margin: auto;
-}
-.loginGroup .lottery-box .login-infot{
-    padding-bottom: 32px;
-    font-size: 16px;
-    color: #333333;
-    text-align: center;
-    line-height: 1.3;
-    width: 100%;
-    max-width: 327px;
-    margin: auto;
-}
-.loginGroup .lottery-box .login-title{
-    padding-bottom: 16px;
-    font-size: 20px;
-    color: #E60000;
-    font-family: 'Vodafone-Rg-Bd';
-}
-.loginGroup .lottery-box .lottery-inputs{
-    width: 100%;
-    max-width: 280px;
-    text-align: center;
-    margin: 8px auto;
-}
-.loginGroup .lottery-box .lotteryGame {
-    width: 100%;
-    max-width: 280px;
-    margin: auto;
-}
-.loginGroup .lottery-box .lotteryGame ul{
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-}
-.loginGroup .lottery-box .square {
-    border: 1px solid #007C92;
-    flex: 0 0 88px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 88px;
-    width: 88px;
-    background: #007C92;
-    color: #ffffff;
-}
-.loginGroup .lottery-box .square.square:not(:nth-child(3n)) {
-    margin-right: 8px;
-}
-.loginGroup .lottery-box .square.square:not(:nth-child(n+7)) {
-    margin-bottom: 8px;
-}
-.loginGroup .lottery-box .square.is-active {
-    border: 6px solid #E60000;
-}
-.loginGroup .lottery-box .square__content {
-    font-size: 16px;
-}
-.loginGroup .lottery-box .square__start-btn {
-    background: #E60000;
-    color: #ffffff;
-    font-size: 16px;
-    cursor: pointer;
-    border: 1px solid transparent;
-    font-family: 'Vodafone-Rg-Bd';
-}
-.loginGroup .lottery-box .lottery-s-head{
-    color: #007C92;
-    font-size: 20px;
-    font-family: 'Vodafone-Rg-Bd';
-}
-.loginGroup .lottery-box .lottery-img-mr{ 
-    margin: 32px 0;
-}
-.loginGroup .lottery-box .lottery-t-info{ 
-    font-size: 16px;
-    font-family: 'Vodafone-Rg-Bd';
-}
-.modals-background .modals-all .modal-box .lottery-img-mr img{
-    margin: 0;
-}
-.loginGroup .lottery-box .lottery-s-head, .loginGroup .lottery-box .lottery-t-info{
-    line-height: 1.3;
-    width: 100%;
-    max-width: 327px;
-    margin: auto;
-}
-.loginGroup .lottery-box .lottery-inputs:first-child .all-inputs, .loginGroup .lottery-box .lottery-inputs:first-child{
-    margin-top: 0;
-}
-.loginGroup .lottery-box .lot-small{
-    font-size: 12px;
-}
 .loginGroup.profileGroup .login-title{
     font-size: 24px;
 }
@@ -1739,7 +1561,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     max-width: none;
     position: relative;
     overflow: hidden;
-    min-height: 452px;
+    min-height: 490px;
 }
 .loginGroup .img-responsive{
     position: absolute;
@@ -3254,7 +3076,7 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     }
     .section-login-group .m-w-promo{
         max-width: 100%;
-        min-height: 452px;
+        min-height: 490px;
     }
     .form-middle {
         max-width: 280px;
@@ -3262,12 +3084,6 @@ a.btn.btn-primary-white:hover, a.btn.btn-primary-white:active {
     }
 }
 @media screen and (min-width: 100px) and (max-width: 767px) {
-    #home #smartphones_section.smart-login .smart-carousel {
-        padding: 24px 0;
-    }
-    #smartphones_section.smart-home .smart-carousel h1{
-        margin-bottom: 24px;
-    }
     #bestellen .chck-all {
         position: sticky;
         top: 52px;
