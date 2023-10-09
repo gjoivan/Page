@@ -1,6 +1,6 @@
 
-<link rel="stylesheet" href="./static/css/main.css" />
-  <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+
+  <nav id="sidebarMenu" class="col-xs-6 d-md-block bg-light sidebar collapse">
     <div class="pt-3">
       <ul class="nav flex-column">
         <li class="nav-item">
@@ -10,15 +10,15 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="file"></span>
-            Clients
+          <a class="nav-link active" aria-current="page" href="./projects" class="sidebar-link" data-link="projects">
+            <span data-feather="projects"></span>
+            Proejcts
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span data-feather="shopping-cart"></span>
-            Proects
+          <a class="nav-link active" aria-current="page" href="./clients" class="sidebar-link" data-link="clients">
+            <span data-feather="home"></span>
+            Clients
           </a>
         </li>
         <li class="nav-item">

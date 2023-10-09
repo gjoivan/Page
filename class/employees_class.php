@@ -5,7 +5,7 @@ class Employees_Class{
 	function __construct($mysqliObj){
         $this->connection = $mysqliObj;
     }
-    public function get_active_employees($status, $name=null){
+    public function get_active_employees($status=null, $name=null){
         $name_sql = '';
         if(!empty($name)){
             $name_sql = " AND `name` LIKE '%{$name}%'";
@@ -14,7 +14,7 @@ class Employees_Class{
         $QueryObj = $this->connection->query($request, MYSQLI_USE_RESULT);
         $return_arr = [];
         while($row = $QueryObj->fetch_assoc()){
-            $return_arr[] = $row;
+            $return_arr[$row['id']] = $row;
         }
         $QueryObj->close();
         return $return_arr;
@@ -44,12 +44,13 @@ class Employees_Class{
         return $return;
     }
     public function save_employee($id, $data){
+        $data_json = json_encode($data['project_id'], JSON_UNESCAPED_UNICODE);
         if($id==null){
-            $stmt = $this->connection->prepare("INSERT INTO `employees` (`name`, `last_name`, `email`, `embg`, `status`, `date_start`) VALUES (?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param('ssssis', $data['name'], $data['last_name'], $data['email'], $data['embg'], $data['status'], $data['date_start']);
+            $stmt = $this->connection->prepare("INSERT INTO `employees` (`name`, `last_name`, `role`, `email`, `embg`, `status`, `project_id`, `date_start`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param('ssississ', $data['name'], $data['last_name'], $data['role'], $data['email'], $data['embg'], $data['status'], $data_json, $data['date_start']);
         }else{
-            $stmt = $this->connection->prepare("UPDATE `employees` SET `name` = ?, `last_name` = ?, `email` = ?, `embg` = ?, `status` = ?, `date_start` = ? WHERE `id`=? LIMIT 1");
-            $stmt->bind_param('ssssisi', $data['name'],  $data['last_name'], $data['email'], $data['embg'], $data['status'], $data['date_start'], $id);
+            $stmt = $this->connection->prepare("UPDATE `employees` SET `name` = ?, `last_name` = ?, `role` = ?, `email` = ?, `embg` = ?, `status` = ?, `project_id` = ?, `date_start` = ? WHERE `id`=? LIMIT 1");
+            $stmt->bind_param('ssississi', $data['name'],  $data['last_name'], $data['role'], $data['email'], $data['embg'], $data['status'], $data_json, $data['date_start'], $id);
         }
 		$stmt->execute();	
 		$return = $stmt->affected_rows;

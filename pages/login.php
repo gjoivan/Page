@@ -12,20 +12,19 @@ if(!empty($_SESSION['login'])){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gradba Unikat</title>
+  <!-- <link rel="stylesheet" href="../static/css/bootstrap.css"> -->
   <link rel="stylesheet" href="../static/css/bootstrap.min.css">
   <link rel="stylesheet" href="../static/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="../static/js/bootstrap.min.js">
-  <link rel="stylesheet" href="../static/js/jquery.com_jquery-3.7.0.js">
 
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../static/js/jquery.com_jquery-3.7.1.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script> -->
+
 
 </head>
 
@@ -35,14 +34,14 @@ if(!empty($_SESSION['login'])){
       <div>
         <!-- Email input -->
         <div>
-          <input type="email" id="email_entry" class="form-control" />
-          <label class="form-label" for="form2Example1">Email address</label>
+          <input type="email" id="email_entry" class="form-control"/>
+          <label class="form-label">Email address</label>
         </div>
 
         <!-- Password input -->
         <div class="form-outline mb-4">
           <input type="password" id="password_entry" class="form-control" />
-          <label class="form-label" for="form2Example2">Password</label>
+          <label class="form-label">Password</label>
         </div>
 
         <!-- 2 column grid layout for inline styling -->
@@ -51,7 +50,7 @@ if(!empty($_SESSION['login'])){
             <!-- Checkbox -->
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-              <label class="form-check-label" for="form2Example31"> Remember me </label>
+              <label class="form-check-label"> Remember me </label>
             </div>
           </div>
 

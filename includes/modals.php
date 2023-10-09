@@ -2,14 +2,6 @@
     <div class="modals-grey"></div>
     <div class="modals-all" id="generic_modal_body"></div>
 </div>
-<!-- <div class="modal generic_modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div class="modals-all" id="generic_modal_body">
-        </div>
-    </div>
-  </div>
-</div> -->
 <script>
     function display_modal(modal){
         if($(modal).is(':visible')){
@@ -24,3 +16,22 @@
     }
 
 </script>
+<style>
+    .modal-content {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      pointer-events: auto;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.3rem;
+      outline: 0;
+      max-height: 600px;
+      max-width: 900px;
+      overflow: scroll;
+    }
+</style>
