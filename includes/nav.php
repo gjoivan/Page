@@ -12,7 +12,7 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="./projects" class="sidebar-link" data-link="projects">
             <span data-feather="projects"></span>
-            Proejcts
+            Projects
           </a>
         </li>
         <li class="nav-item">

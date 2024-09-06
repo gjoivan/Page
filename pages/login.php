@@ -12,7 +12,6 @@ if(!empty($_SESSION['login'])){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gradba Unikat</title>
-  <!-- <link rel="stylesheet" href="../static/css/bootstrap.css"> -->
   <link rel="stylesheet" href="../static/css/bootstrap.min.css">
   <link rel="stylesheet" href="../static/css/bootstrap-grid.min.css">
 

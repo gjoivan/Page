@@ -24,7 +24,7 @@
         <a  class="btn btn-sm btn-primary" target="_blank" onclick="create_edit_client_modal();">Create client</a>
     </div>
     <div class="col-xs-2">
-        <a style="color: inherit;" class="btn btn-sm btn-primary" target="_blank" href="/bo/ajax/clients_ajax.php?e=export_verified_clients">Export client</a>
+        <a class="btn btn-sm btn-primary" target="_blank" href="/bo/ajax/clients_ajax.php?e=export_verified_clients">Export client</a>
     </div>
     <div>
         <div id="table_active_clients_tbody"></div>
